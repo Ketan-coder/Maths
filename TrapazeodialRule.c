@@ -6,6 +6,11 @@ double f(double x) {
     return 1.0 / x;
 }
 
+// (x^3) + 2(x^2) + 7
+// double f(double x){
+//     return x*x*x + 2*(x*x) + 7;
+// }
+
 // Trapezoidal rule for definite integral
 double trapezoidal(double a, double b, int n) {
     double h = (b - a) / n;
@@ -26,6 +31,8 @@ double trapezoidal(double a, double b, int n) {
 int main() {
     double a = 0.2; // Lower limit
     double b = 1.0; // Upper limit
+    // double a = 2.0; // Lower limit
+    // double b = 6.0; // Upper limit
     int n = (int)((b - a) / 0.2); // Calculate the number of subintervals
 
     double integral = trapezoidal(a, b, n);
